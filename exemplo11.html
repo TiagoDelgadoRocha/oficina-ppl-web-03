@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 11</title>
+
+    <style>
+    *{
+        font-size:16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .bloco{ 
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        width: 9rem;
+        height: 3rem;
+        padding: 1rem;
+        border-radius: .5rem;
+        margin: 1rem;
+    }
+    .container{
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid gray;
+        box-shadow: .5rem .5rem .3rem .01rem gray ;
+        display: flex;
+        flex-wrap: wrap;
+    .par{
+        background-color: blue;
+    }
+    .impar{
+        background-color: green;
+    }
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <script>
+        /*
+        Condicional
+        Estrututra sequencial
+        comandos de saida
+        variavel
+        templete string
+        */
+       var num;
+       
+       num = parseFloat(prompt("informe o primerio numero: "));
+
+       if (num%2 ==0)
+       document.write(`<div class= "bloco par">$o numero ${num} é par</div> `)
+    else
+      document.write(`<div class= "bloco impar">$o numero ${num} é impar</div> `)
+       </script>
+       </div> <!-- fechamento do container-->
+</body>
+</html>
